@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!--label 태그 활용-->
+
+        <!--암묵적인 방법-->
+        <br>
+        <label>치즈추가 <input type="checkbox"></label>
+        <label>크러스트추가 <input type="checkbox"></label>
+        <label>새우추가 <input type="checkbox"></label>
+        <br>
+
+        <!--
+        명시적인 방법
+        단 이렇게 하면 둘이 연결이 안되어있음 연갤해줘야함
+        label for 속성
+        input id 속성
+
+        id 와 for은 세트 
+        단 잘 보고 연결할 것
+        -->
+
+        <br>
+        <label for="chs">치즈추가</label> <input type="checkbox" checked id="chs">
+        <label for="crust">크러스트추가</label> <input type="checkbox" id="crust">
+        <label for="shrimp">새우추가</label> <input type="checkbox" id="shrimp">
+        <br>
+
+        <br>
+        <fieldset>
+            <legend>족발 사이즈</legend>
+            <label>대 <input type="radio" name="size" checked></label>
+            <label>중 <input type="radio" name="size"></label>
+            <label>소 <input type="radio" name="size"></label>
+        </fieldset>
+        <br>
+
+        <br>
+        <fieldset>
+            <legend>블로그 글쓰기</legend>
+            <label>제목 <input type="text" value="초기값"></label>
+            <br>
+            <br>
+            내용
+            <br>
+            <textarea>콘텐츠가 있는 태그</textarea>
+            <textarea readonly>히히 입력 못하지</textarea>
+        </fieldset>
+
+        <br>
+
+        <select>
+            
+            <option>원조김밥</option>
+            <option>치즈김밥</option>
+            <option selected>참치김밥</option>
+            
+        </select>
+
+        <br>
+
+        <select multiple size="5">
+            <optgroup label="김밥">
+            <option>원조김밥</option>
+            <option>치즈김밥</option>
+            <option>참치김밥</option>
+            </optgroup>
+            <optgroup label="햄버거">
+            <option>싸이버거</option>
+            <option>빅맥</option>
+            <option>와퍼</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <button>버튼태그</button>
+        <input type="button" disabled value="인풋버튼">
+        <input type="submit">
+        <input type="reset">
+
+        <br><br>
+
+        <button type="submit">버튼태그</button>
+        <button type="reset">버튼태그</button>
+        <button type="button">버튼태그</button>
+
+        <!--
+        아니 버튼에 버튼태그는 왜추가함? 
+        -> 이게 폼내부에서 사용시 그냥 버튼을 사용하면 submit 처럼 인식함
+        -> 그래서 버튼태그로 구분해줘야 할 수도 있음
+        -->
+
+        <br><br>
+
+        <button>
+            <img src="./image001.jpg">
+        </button>
+
+        <!--버튼태그는 안에 컨탠츠를 넣을 수 있음(ex. 이미지를 안에 넣는다거나(^위에 처럼)) 인풋은 불가-->
+        
+        <br><br>
+        
+        <input type="text" maxlength="8">
+
+        <br>
+
+        일회용품을 받지 않겠습니다 <input type="checkbox" checked>
+
+        <br><br>
+
+        <form>
+            <input type="text" value="id">
+            <input type="text" placeholder="id">
+            <br><br>
+            <input type="reset">
+            <input type="submit">
+            <br>
+            <button>submit button</button>
+            <button type="button">normal button</button>
+        </form>
+
+    </body>
+</html>

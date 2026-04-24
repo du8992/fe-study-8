@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 명확할수록 우선순위가 높음 (ex. 3 > 4 > 2 > 1 순) */
+        /* 1 */
+        * { color: gray;}
+        /* 2 */
+        h2 { color: blue;}
+        /* 3 */
+        #select-id { color: green;}
+        /* 4 */
+        .select-class { color: orange;}
+
+        [href] { color: black;}
+
+        [target="_blank"] { color: red;}
+    </style>
+</head>
+<body>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3 id="select-id">h3</h3>
+    <h4 class="select-class">h4</h4>
+    <h5>h5</h5>
+
+    <p>p 하나</p>
+    <p class="select-class">p 둘</p>
+    <p>p 셋</p>
+    <p>p 넷</p>
+
+    <a href="https://www.naver.com" target="_blank">네이버로 이동</a>
+    <a href="https://www.google.com" target="_self">구글로 이동</a>
+    <h2>h2</h2>
+    <h2>h2</h2>
+</body>
+</html>

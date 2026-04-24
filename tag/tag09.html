@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <audio src="../media/5second.mp3" controls></audio>
+
+    <audio controls> <!--html의 if문 이 중에 되는것만 재생하겠다 -->
+        <source src="../media/5second.mp3" type="audio/mp3">
+        <source src="../media/5second.ogg" type="audio/ogg">
+        <source src="../media/5second.wav" type="audio/wav">
+    </audio>
+
+    <video src="../media/5second.mp4" controls></video>
+
+    <video controls> <!--위에랑 똑같음 -->
+        <source src="../media/5second.mp4" type="video/mp4">
+        <source src="../media/5second.mpeg" type="video/mpeg">
+        <source src="../media/5second.avi" type="video/x-msvideo">
+    </video>
+
+    <!--
+    muted 왜 넣음?
+    ->재생이 안됌
+    ->엥? 문법 오류임?
+    ->크롬 브라우저가 기본적으로 잠가둔거임 ㅇㅇ
+    재생시키고 싶으면 별도로 설정해야댐
+    -->
+    <video src="../media/5second.mp4" autoplay muted loop></video>
+
+    <iframe width="745" height="419" src="https://www.youtube.com/embed/y-GDVGpqO50?list=RDy-GDVGpqO50" title="[한글자막] 히치콕 (재녹음) - 요루시카" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+</body>
+</html>

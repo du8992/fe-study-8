@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>레이아웃</title>
+<style>
+    * {
+        margin: 0;
+    }
+
+    h3 {
+        background-color: lightgray;
+        margin: 0;
+    }
+
+    .container {
+        width: 500px;
+        height: 300px;
+        border: 5px solid black;
+        background-color: white;
+        position: relative;
+        margin: 50px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        color: black;
+        font-weight: bold;
+    }
+
+    .A {
+        background-color: red;
+        top: 0;
+        left: 0;
+    }
+
+    .B {
+        background-color: green;
+        z-index: 2;
+        top: 50px;
+        left: 50px;
+    }
+
+    .C {
+        background-color: yellow;
+        top: 100px;
+        left: 0;
+    }
+</style>
+</head>
+<body>
+
+<h3>배경색이 lightgray<br>h3글자</h3>
+
+<div class="container">
+    <div class="box A">A</div>
+    <div class="box B">B</div>
+    <div class="box C">C</div>
+</div>
+
+</body>
+</html>

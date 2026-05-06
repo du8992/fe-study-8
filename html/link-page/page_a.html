@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./page.css">
+</head>
+<body>
+    <div>
+        <a href="page_a.html">page_a 로 이동</a>
+
+        <a href="page_b.html">page_b 로 이동</a>
+    </div>
+    <h1>여기는 Page a입니다.</h1>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="page_a.html">page_a 로 이동</a></li>
+            <li><a href="page_b.html">page_b 로 이동</a></li>
+            <li><a href="page_c.html">page_c 로 이동</a></li>
+        </ul>
+    </div>
+
+    <!-- action 해당 폼에서 입력된 값을 모아서 전송할 대상 -->
+    <form action="./page_c.html">
+        <div>이름 : <input type="text" name="name"></div>
+        <div>닉네임 : <input type="text" name="nickname"></div>
+        <button type="submit">제출</button>
+    </form>
+</body>
+</html>

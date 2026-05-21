@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+    }
+    .modal {
+        width: 350px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .tabs {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .tabs a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: gray;
+    }
+    .tabs .active {
+        color: blue;
+        border-bottom: 2px solid blue;
+    }
+    label {
+        font-size: 13px;
+        display: block;
+        margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .checkbox {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    button {
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px;
+        background: #4a7bdc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .sns {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 13px;
+        color: blue;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="modal">
+    <h2>지금 가입하시면</h2>
+    <p><b>웰컴쿠폰을 드려요!</b></p>
+
+    <div class="tabs">
+        <a href="#">로그인</a>
+        <a href="#" class="active">회원가입</a>
+    </div>
+
+    <form>
+        <label>이메일</label>
+        <input type="email" placeholder="이메일을 입력해주세요.">
+
+        <label>이름 / 업체명</label>
+        <input type="text" placeholder="2자 이상 20자 이하">
+
+        <label>비밀번호</label>
+        <input type="password" placeholder="영문 숫자 특수문자 조합 6~16자리">
+
+        <label>비밀번호 확인</label>
+        <input type="password" placeholder="비밀번호를 다시 입력해주세요.">
+
+        <div class="checkbox">
+            <input type="checkbox" id="agree">
+            <label for="agree">개인정보수집이용안내 및 약관에 동의 합니다</label>
+        </div>
+
+        <button type="submit">회원 가입하기</button>
+    </form>
+
+    <div class="sns">SNS로 간편하게 가입하기</div>
+</div>
+
+</body>
+</html>

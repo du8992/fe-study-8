@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>글자</p>
+    </div>
+
+    <div class="container">
+        <div class="box a" id="box-a-id">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+    </div>
+
+    <p id = "target">text<span style="display: none;">hidden</span></p>
+
+    <script>
+    const boxA = document.getElementById('box-a-id');
+    console.log(boxA);
+
+    const boxes = document.getElementsByClassName('box');
+    console.log(boxes);
+    console.log(boxes[0]);
+    console.log(boxes[1]);
+    console.log(boxes[2]);
+
+    const cBoxes = document.getElementsByClassName('c');
+    console.log(cBoxes);
+    console.log(cBoxes[0]);
+
+    const boxACss = document.querySelector('#box-a-id');
+    console.log(boxACss);
+
+    const boxesCss = document.querySelector('.box');
+    console.log(boxesCss);
+
+    console.log(document.querySelector('.c'));
+
+    const p_target = document.getElementById('target');
+    p_target.textContent = 'js에서 접근해서 텍스트 수정하기';
+
+    p_target.innerHTML = 'innerHTML 값 수정 <strong>스트롱</strong> 수정';
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color : red;
+        }
+        .blue {
+            color: blue;   
+        }
+
+        .big-font {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p id="pid">text 글자 p태그 글자</p>
+
+    <a id="aid" href="https://netflix.com">넷플릭스로 이동하기</a>
+
+    <div id="container">
+        <p>기존 존재하는 p태그</p>
+        
+    </div>
+
+    <script>
+        const p_pid = document.getElementById('pid')
+        p_pid.classList.add('red');
+        p_pid.classList.add('blue');
+
+        p_pid.addEventListener('click', ()=>{
+            p_pid.classList.toggle('big-font');
+        })
+
+        p_pid.getAttribute('class');
+
+        const a_aid = document.getElementById('aid');
+        console.log(a_aid.getAttribute('href'));
+
+        a_aid.setAttribute('href', 'https://tving.com');
+        a_aid.setAttribute('target', '_blank');
+
+        a_aid.removeAttribute('target');
+
+        const divCon = document.getElementById('container');
+
+        const newP = document.createElement("p");
+        const txtNode = document.createTextNode("p태그 내부 글씨");
+        const attrNode = document.createAttribute("class");
+        attrNode.value = "red";
+
+        newP.appendChild(txtNode);
+        newP.setAttributeNode(attrNode);
+
+        divCon.appendChild(newP);
+
+
+    </script>
+</body>
+</html>
